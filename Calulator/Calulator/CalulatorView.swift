@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CalulatorView: View {
-    var text = "1,920"
+    @ObservedObject var calculatorViewModel: CalculatorViewModel
     
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct CalulatorView: View {
                 HStack {
                     Spacer()
                     
-                    Text(text)
+                    Text(calculatorViewModel.text)
                         .font(.pretendard(.extraLight, size: 94))
                         .foregroundStyle(.white)
                         .padding(.trailing, 30)
@@ -85,6 +85,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 7)
+                    }
                     
                     ZStack {
                         Circle()
@@ -96,6 +99,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 8)
+                    }
                     
                     ZStack {
                         Circle()
@@ -107,6 +113,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 9)
+                    }
                     
                     ZStack {
                         Circle()
@@ -131,6 +140,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 4)
+                    }
                     
                     ZStack {
                         Circle()
@@ -142,6 +154,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 5)
+                    }
                     
                     ZStack {
                         Circle()
@@ -153,6 +168,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 6)
+                    }
                     
                     ZStack {
                         Circle()
@@ -177,6 +195,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 1)
+                    }
                     
                     ZStack {
                         Circle()
@@ -188,6 +209,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 2)
+                    }
                     
                     ZStack {
                         Circle()
@@ -199,6 +223,9 @@ struct CalulatorView: View {
                             .foregroundStyle(.white)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 3)
+                    }
                     
                     ZStack {
                         Circle()
@@ -225,6 +252,9 @@ struct CalulatorView: View {
                             .padding(.trailing, 90)
                     } // End of ZStack
                     .padding(.trailing, 15)
+                    .onTapGesture {
+                        calculatorViewModel.didNumberTapped(number: 0)
+                    }
                     
                     ZStack {
                         Circle()
@@ -256,5 +286,5 @@ struct CalulatorView: View {
 }
 
 #Preview {
-    CalulatorView()
+    CalulatorView(calculatorViewModel: CalculatorViewModel())
 }

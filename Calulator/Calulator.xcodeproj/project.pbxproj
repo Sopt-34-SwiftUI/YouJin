@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD11AE072C01824C00CAC61E /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11AE062C01824C00CAC61E /* CalculatorViewModel.swift */; };
 		DDF5721C2BF0CC460014C742 /* CalulatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5721B2BF0CC460014C742 /* CalulatorApp.swift */; };
 		DDF5721E2BF0CC460014C742 /* CalulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5721D2BF0CC460014C742 /* CalulatorView.swift */; };
 		DDF572202BF0CC470014C742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF5721F2BF0CC470014C742 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD11AE062C01824C00CAC61E /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		DDF572182BF0CC460014C742 /* Calulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF5721B2BF0CC460014C742 /* CalulatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorApp.swift; sourceTree = "<group>"; };
 		DDF5721D2BF0CC460014C742 /* CalulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				DDF572292BF0CFEB0014C742 /* Extension */,
 				DDF5721B2BF0CC460014C742 /* CalulatorApp.swift */,
 				DDF5721D2BF0CC460014C742 /* CalulatorView.swift */,
+				DD11AE062C01824C00CAC61E /* CalculatorViewModel.swift */,
 				DDF5721F2BF0CC470014C742 /* Assets.xcassets */,
 				DDF572212BF0CC470014C742 /* Preview Content */,
 			);
@@ -204,6 +207,7 @@
 			files = (
 				DDF5722B2BF0CFF50014C742 /* Font+.swift in Sources */,
 				DDF5721E2BF0CC460014C742 /* CalulatorView.swift in Sources */,
+				DD11AE072C01824C00CAC61E /* CalculatorViewModel.swift in Sources */,
 				DDF5721C2BF0CC460014C742 /* CalulatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
