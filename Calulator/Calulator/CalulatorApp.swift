@@ -11,7 +11,7 @@ import SwiftUI
 struct CalulatorApp: App {
     var body: some Scene {
         WindowGroup {
-            CalulatorView()
+            CalulatorView(calculatorViewModel: CalculatorViewModel())
                 .background(.black)
         }
     }
